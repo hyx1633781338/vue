@@ -45,98 +45,115 @@
                     },
                     {
                         icon: 'el-icon-lx-service',
-						index: '8',
-                        title: '产品管理',
+						index: '1',
+                        title: '微信管理',
 						subs: [
 							{
 								index: 'productlist',
-								title: '产品信息',
-							}
+								title: '公众账号管理',
+							},
+                            {
+                                index: 'khleave',
+                                title: '微信菜单管理',
+                            }
 						]
                     },{
                         icon: 'el-icon-lx-friendadd',
-						index: '9',
-                        title: '客户管理',
+						index: '2',
+                        title: '微信模板管理',
 						subs: [
 							{
 								index: 'adminlist',
-								title: '客户信息管理',
-							},
-							{
-								index: 'khleave',
-								title: '客户流失管理',
+								title: '微信模板管理',
 							}
 						]
                     },{
                         icon: 'el-icon-lx-vipcard',
-						index: '10',
-                        title: '服务管理',
+						index: '3',
+                        title: '智能应答管理',
 						subs: [
 							{
 								index: 'jksh',
-								title: '借款审核',
-							}
+								title: '关键字指令',
+							},{
+                                index: 'jksh',
+                                title: '关键字管理',
+                            },{
+                                index: 'jksh',
+                                title: '关键字类别管理',
+                            },{
+                                index: 'jksh',
+                                title: '关键字类别关联',
+                            },{
+                                index: 'jksh',
+                                title: '智能应答管理',
+                            }
 						]
                     },{
                         icon: 'el-icon-money',
-                        index: '13',
-                        title: '财务管理',
+                        index: '4',
+                        title: '微信报表管理',
                         subs: [
                             {
                                 index: 'cwgl',
-                                title: '放款审核',
+                                title: '二级菜单点击率',
                             },
                             {
                                 index: 'zdsl',
-                                title: '账单流水',
+                                title: '关键字检索统计报表',
+                            },
+                            {
+                                index: 'zdsl',
+                                title: '用户关注人数报表',
+                            },
+                            {
+                                index: 'zdsl',
+                                title: '绑定用户时段统计报表',
+                            },
+                            {
+                                index: 'zdsl',
+                                title: '绑定用户日统计报表',
                             }
                         ]
                     },{
                         icon: 'el-icon-set-up',
-                        index: '14',
-                        title: '催收管理',
+                        index: '5',
+                        title: '网点/ATM维护',
                         subs: [
                             {
                                 index: 'zdcs',
-                                title: '账单催收',
+                                title: '网点/ATM维护',
                             }
                         ]
                     },
                    {
                         icon: 'el-icon-lx-rank',
-                        index: '11',
-                        title: '统计报表',
+                        index: '6',
+                        title: '微信绑定管理',
                         subs: [
                             {
                                 index: 'khgx',
-                                title: '客户贡献分析',
+                                title: '微信绑定明细查询',
                             },
                             {
                                 index: 'khgc',
-                                title: '客户构成分析',
+                                title: '微信关注明细查询',
                             },
                             {
                                 index: 'khfw',
-                                title: '客户服务分析',
-                            },
-                            {
-                                index: 'khls',
-                                title: '客户流失分析',
-                            },
+                                title: '客户绑定签约',
+                            }
                         ]
                     },{
                         icon: 'el-icon-lx-read',
-                        index: '12',
-                        title: '基础数据',
+                        index: '7',
+                        title: '系统管理',
                         subs: [
                             {
                                 index: 'drag',
-                                title: '数据字典管理',
+                                title: '操作员管理',
                             },
-                            {
-                                index: 'dialog',
-                                title: '查询产品信息',
-                            }
+
                         ]
                     },
                 ]
