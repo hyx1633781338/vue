@@ -1,0 +1,43 @@
+/**
+ * 对后台请求的地址的封装，URL格式如下：
+ * 模块名_实体名_操作
+ */
+export default {
+	//服务器
+	'SERVER': 'http://localhost:8081',
+
+	//用户管理
+	'SYS_USER_DOLOGIN': '/vue/userAction_doLogin.action', //登陆
+	'SYS_USER_LIST': '/sys/userAction_list.action', //用户查询
+	'SYS_USER_DORESETPWD': '/sys/userAction_doResetPwd.action', //重置密码
+
+	//文章管理
+	'SYS_ARTICLES_MERGE': '/sys/articlesAction_merge.action',
+	'SYS_ARTICLES_DEL': '/sys/articlesAction_del.action',
+	'SYS_ARTICLES_LOAD': '/sys/articlesAction_load.action',
+	'SYS_ARTICLES_LIST': '/sys/articlesAction_list.action',
+
+	//菜单管理
+	'SYS_TREENODE_LISTALL': '/sys/treeNodeAction_listAll.action',
+	'SYS_VUEX_EDIT': '/sys/vuexAction_edit.action',
+
+	//查看商品信息
+	'SP_CKSP_SEL': '/vue/productAction_list.action',
+	//查看仓库信息
+	'CK_CKCK_SEL': '/vue/storageAction_selStorage.action',
+	
+	//流失信息
+	'LIUSHI':'vue/cstLostAction_selCstLost.action',
+	
+	//服务管理
+	//添加服务
+	'FW_FWCJ_ADD': '/vue/cstServiceAction_addCstService.action',
+	//查询服务
+	'FW_FWCL_SEL': '/vue/cstServiceAction_selCstService.action',
+	//修改
+	'FW_FWCL_EDIT': '/vue/cstServiceAction_updCstService.action',
+	//获得请求的完整地址，用于mockjs测试时使用
+	'getFullPath': k => {
+		return this.SERVER + this[k];
+	}
+}
